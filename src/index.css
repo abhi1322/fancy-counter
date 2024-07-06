@@ -1,0 +1,88 @@
+/* resting all tags */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  box-sizing: border-box;
+  font-family: "PT Sans", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  background-color: #1d2806;
+}
+
+/* reset buttons */
+button {
+  border: none;
+  background: none;
+}
+
+/* Counter container */
+.container {
+  height: 500px;
+  width: 400px;
+  background-color: #b1f936;
+  border-radius: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+  transition: all .1s ease-in;
+
+}
+
+.counter {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  height: 90%;
+  padding: 40px 0;
+}
+
+.counter p {
+  font-weight: bold;
+  font-size: 1.3rem;
+  color: #5b8208;
+  text-align: center;
+}
+
+.counter h1 {
+  height: 80%;
+  display: flex;
+  align-items: center;
+  font-size: 8rem;
+  font-weight: 500;
+  color: #385006;
+}
+
+/* increment -decrement -  buttons */
+
+.btn-container {
+  display: flex;
+  height: 25%;
+  width: 100%;
+}
+
+.btn-container button {
+  background-color: #385006;
+  color: #b1f936;
+  width: 100%;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.btn-container hr {
+  opacity: 0.5;
+}
+
+@media only screen and (max-width: 600px) {
+  .container {
+    height: 100vh;
+    width: 100vw;
+    border-radius: 0;
+  }
+}
